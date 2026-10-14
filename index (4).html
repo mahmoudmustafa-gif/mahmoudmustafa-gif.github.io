@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahmoud Mostafa — Media Buyer &amp; Social Media Specialist</title>
+<meta name="description" content="Mahmoud Mostafa is a Media Buyer, Social Media Specialist and Business Strategist based in Alexandria, Egypt, focused on paid media, lead generation, social strategy and business-first marketing.">
+<meta property="og:title" content="Mahmoud Mostafa — Media Buyer & Social Media Specialist">
+<meta property="og:description" content="Marketing that starts with the business, not the ad.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./assets/og-image.jpg">
+<!-- TODO: add a 1200x630 image at ./assets/og-image.jpg for link previews -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23123F4A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' fill='%23F4F0E8' text-anchor='middle'%3EM%3C/text%3E%3Crect x='16' y='47' width='32' height='3' fill='%23D86F32'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,300italic&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --poseidon:#123F4A;
+    --norse:#5B7C8D;
+    --pumpkin:#D86F32;
+    --ivory:#F4F0E8;
+    --charcoal:#101719;
+
+    --font-display:'Fraunces','Iowan Old Style',Georgia,serif;
+    --font-body:'Archivo','Helvetica Neue',Arial,sans-serif;
+
+    --fs-hero:clamp(2.6rem,5.4vw + 1rem,5.25rem);
+    --fs-h2:clamp(2rem,3vw + 1rem,3.1rem);
+    --fs-h3:clamp(1.3rem,1vw + 1rem,1.65rem);
+    --fs-num:clamp(2.6rem,4vw + 1rem,4.2rem);
+    --fs-body:1.05rem;
+    --fs-small:0.875rem;
+
+    --maxw:1180px;
+    --pad:clamp(1.25rem,4vw,3rem);
+    --radius:2px;
+    --line:rgba(244,240,232,0.14);
+
+    color-scheme: dark;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top:88px;}
+  body{
+    margin:0;
+    background:linear-gradient(180deg, #1C4F5E 0%, var(--poseidon) 32%, var(--charcoal) 100%);
+    color:var(--ivory);
+    font-family:var(--font-body);
+    font-size:var(--fs-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  h1,h2,h3{font-family:var(--font-display); font-weight:500; margin:0; line-height:1.08; letter-spacing:-0.01em;}
+  p{margin:0;}
+  .container{max-width:var(--maxw); margin:0 auto; padding-left:var(--pad); padding-right:var(--pad);}
+
+  .eyebrow{
+    font-family:var(--font-body);
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--norse);
+    font-weight:600;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:0.82rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:0.95rem 1.6rem;
+    border-radius:var(--radius);
+    border:1px solid transparent;
+    transition:background-color .25s ease, color .25s ease, border-color .25s ease;
+    cursor:pointer;
+  }
+  .btn-primary{background:var(--pumpkin); color:var(--charcoal); border-color:var(--pumpkin);}
+  .btn-primary:hover{background:var(--ivory); color:var(--poseidon); border-color:var(--ivory);}
+  .btn-secondary{background:transparent; color:var(--ivory); border-color:rgba(244,240,232,0.35);}
+  .btn-secondary:hover{border-color:var(--pumpkin); color:var(--pumpkin);}
+  .btn-ghost{border-color:transparent; color:var(--norse); padding-left:0; padding-right:0;}
+  .btn-ghost:hover{color:var(--pumpkin);}
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(16,23,25,0.72);
+    backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid rgba(244,240,232,0.08);
+    padding-top:env(safe-area-inset-top,0px);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:1.1rem var(--pad);
+    max-width:var(--maxw); margin:0 auto;
+  }
+  .logo{
+    font-family:var(--font-display);
+    font-size:1.05rem;
+    letter-spacing:0.02em;
+    text-decoration:none;
+    color:var(--ivory);
+    font-weight:600;
+  }
+  nav.links{display:flex; align-items:center; gap:2.1rem;}
+  nav.links a{
+    font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase;
+    text-decoration:none; color:var(--ivory); font-weight:600;
+    padding-bottom:3px; border-bottom:1px solid transparent;
+    transition:border-color .2s ease, color .2s ease;
+  }
+  nav.links a:hover{border-color:var(--pumpkin); color:var(--pumpkin);}
+  .nav-cv{
+    font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;
+    text-decoration:none; color:var(--charcoal); background:var(--pumpkin);
+    padding:0.6rem 1.1rem; border-radius:var(--radius);
+    transition:background-color .2s ease, color .2s ease;
+  }
+  .nav-cv:hover{background:var(--ivory);}
+  .burger{display:none; background:none; border:0; cursor:pointer; padding:0.4rem;}
+  .burger span{display:block; width:22px; height:2px; background:var(--ivory); margin:5px 0; transition:transform .2s ease, opacity .2s ease;}
+  .mobile-panel{display:none; flex-direction:column; gap:1.4rem; padding:1.5rem var(--pad) 2rem; border-top:1px solid rgba(244,240,232,0.1); background:var(--charcoal);}
+  .mobile-panel a{
+    text-decoration:none; color:var(--ivory); font-family:var(--font-display); font-size:1.4rem;
+  }
+  .mobile-panel.open{display:flex;}
+
+  @media (max-width:820px){
+    nav.links, .nav-cv{display:none;}
+    .burger{display:block;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{padding:clamp(3rem,8vw,6.5rem) 0 clamp(3.5rem,7vw,5.5rem);}
+  .hero-grid{
+    display:grid; grid-template-columns:1.35fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:end;
+  }
+  .hero-copy .eyebrow{margin-bottom:1.1rem; display:block;}
+  .hero h1{font-size:var(--fs-hero); font-weight:400; color:var(--ivory);}
+  .hero h1 em{font-style:italic; font-weight:300; color:var(--pumpkin);}
+  .hero-sub{
+    margin-top:1.6rem; max-width:34ch; color:rgba(244,240,232,0.78); font-size:1.05rem;
+  }
+  .hero-meta{margin-top:2.2rem; font-size:var(--fs-small); color:var(--norse); letter-spacing:0.02em;}
+  .hero-ctas{display:flex; gap:1rem; margin-top:2.4rem; flex-wrap:wrap;}
+
+  .portrait-frame{
+    position:relative;
+    aspect-ratio:4/5;
+    border:1px solid rgba(244,240,232,0.18);
+    background:var(--charcoal);
+    overflow:hidden;
+    border-radius:4px;
+  }
+  .portrait-frame img{
+    width:100%; height:100%; object-fit:cover; object-position:center top;
+    display:block;
+  }
+  .portrait-frame::after{
+    content:""; position:absolute; width:26px; height:26px; bottom:0; right:0; z-index:2;
+    border-bottom:3px solid var(--pumpkin); border-right:3px solid var(--pumpkin);
+  }
+  @media (max-width:820px){
+    .hero-grid{grid-template-columns:1fr; align-items:start;}
+    .portrait-frame{order:-1; max-width:280px; aspect-ratio:4/5; margin-bottom:0.5rem;}
+  }
+
+  /* ---------- SECTION SHELLS ---------- */
+  section{padding:clamp(3.5rem,8vw,6.5rem) 0;}
+  .section-head{max-width:640px; margin-bottom:clamp(2.4rem,5vw,3.6rem);}
+  .section-head .eyebrow{margin-bottom:0.8rem; display:block;}
+  .section-head h2{font-size:var(--fs-h2); font-weight:400; color:var(--ivory);}
+
+  .reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:none;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- BELIEF ---------- */
+  .belief p{
+    font-family:var(--font-display); font-weight:400; font-size:clamp(1.4rem,2.4vw,2rem);
+    line-height:1.35; max-width:26ch; color:var(--ivory);
+  }
+
+  /* ---------- ROAD HERE (timeline) ---------- */
+  .road{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.5rem,4vw,2.5rem);}
+  .road-step{border-top:1px solid rgba(244,240,232,0.25); padding-top:1.4rem;}
+  .road-step.current{border-top-color:var(--pumpkin);}
+  .road-step .stage{font-size:var(--fs-small); color:var(--norse); letter-spacing:0.04em; margin-bottom:0.6rem; display:block;}
+  .road-step h3{font-size:1.3rem; font-weight:500; color:var(--ivory); margin-bottom:0.7rem;}
+  .road-step p{color:rgba(244,240,232,0.78); font-size:0.97rem;}
+  @media (max-width:820px){.road{grid-template-columns:1fr; gap:2rem;}}
+
+  /* ---------- WORK / CASE CARDS ---------- */
+  .case-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.2rem,2.5vw,1.75rem);}
+  .case-card{
+    position:relative; border-radius:14px; overflow:hidden;
+    border:1px solid rgba(244,240,232,0.10);
+    background:
+      radial-gradient(140% 160% at 8% -10%, rgba(91,124,141,0.40), transparent 55%),
+      var(--charcoal);
+    padding:clamp(1.5rem,3vw,2rem);
+    box-shadow:0 24px 48px -24px rgba(0,0,0,0.55);
+  }
+  .case-card.featured{
+    grid-column:1 / -1;
+    padding:clamp(2rem,4vw,3rem);
+    border-top:2px solid var(--pumpkin);
+    background:
+      radial-gradient(90% 90% at 100% 0%, rgba(216,111,50,0.12), transparent 60%),
+      radial-gradient(140% 160% at 8% -10%, rgba(91,124,141,0.42), transparent 55%),
+      var(--charcoal);
+  }
+  .case-card h3{font-size:clamp(1.4rem,2.2vw,1.9rem); font-weight:500; color:var(--ivory);}
+  .case-tags{margin-top:0.5rem; margin-bottom:1.5rem;}
+  .case-tags span{display:block; font-size:0.78rem; color:var(--norse); line-height:1.55;}
+  .concept-tag{display:inline-block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--norse); border:1px solid var(--norse); padding:0.2rem 0.6rem; margin-bottom:1rem; border-radius:2px;}
+
+  .result-mini{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(1rem,2.5vw,1.6rem);
+    margin:0 0 2rem; padding-top:1.6rem; border-top:1px solid rgba(244,240,232,0.14);
+  }
+  .result-mini .num{font-family:var(--font-display); font-size:clamp(1.9rem,3vw,2.8rem); color:var(--pumpkin); line-height:1;}
+  .result-mini .label{margin-top:0.55rem; font-size:0.78rem; color:rgba(244,240,232,0.72); line-height:1.4;}
+  .results-footnote{margin:-1.4rem 0 2rem; font-size:0.78rem; color:rgba(244,240,232,0.5);}
+
+  .case-body{display:grid; grid-template-columns:repeat(2,1fr); gap:1.6rem; margin-bottom:1.8rem;}
+  .case-card.compact .case-body{display:flex; flex-direction:column; gap:1.1rem;}
+  .case-body h4{font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--pumpkin); font-weight:600; margin-bottom:0.5rem;}
+  .case-body p{font-size:0.92rem; color:rgba(244,240,232,0.82); line-height:1.55;}
+
+  .evidence-img{border:1px solid rgba(244,240,232,0.14); border-radius:8px; margin-bottom:1.4rem; overflow:hidden;}
+  .evidence-img img{width:100%; height:auto; display:block;}
+  .case-link{display:inline-block; font-size:0.85rem; font-weight:600; text-decoration:none; color:var(--ivory); border-bottom:1px solid var(--pumpkin);}
+
+  @media (max-width:900px){
+    .case-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:640px){
+    .case-grid{grid-template-columns:1fr;}
+    .case-body{grid-template-columns:1fr;}
+    .result-mini{grid-template-columns:repeat(2,1fr);}
+  }
+
+  /* ---------- EXPERTISE ---------- */
+  .expertise-list{border-top:1px solid var(--line);}
+  .expertise-row{
+    display:grid; grid-template-columns:70px 1fr 2fr; gap:1.5rem; align-items:start;
+    padding:1.7rem 0; border-bottom:1px solid var(--line);
+  }
+  .expertise-row .idx{font-family:var(--font-display); font-size:1.1rem; color:var(--pumpkin);}
+  .expertise-row h3{font-size:1.15rem; font-weight:500; color:var(--ivory);}
+  .expertise-row p{font-size:0.95rem; color:rgba(244,240,232,0.78); max-width:52ch;}
+  @media (max-width:700px){
+    .expertise-row{grid-template-columns:40px 1fr; row-gap:0.5rem;}
+    .expertise-row p{grid-column:2; }
+  }
+
+  .tools{margin-top:3rem; padding-top:2rem; border-top:1px solid var(--line);}
+  .tools .eyebrow{display:block; margin-bottom:1rem;}
+  .tools-list{display:flex; flex-wrap:wrap; gap:0 0; font-family:var(--font-display); font-size:1.15rem; color:var(--ivory);}
+  .tools-list span{white-space:nowrap;}
+  .tools-list span:not(:last-child)::after{content:"·"; color:var(--pumpkin); margin:0 0.7rem;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--charcoal); color:var(--ivory);}
+  .contact h2{color:var(--ivory); font-size:clamp(2.2rem,4.5vw,3.6rem); font-weight:400; max-width:16ch;}
+  .contact-sub{margin-top:1.2rem; color:rgba(244,240,232,0.7); max-width:44ch; font-size:1.05rem;}
+  .contact-ctas{display:flex; gap:1rem; margin-top:2.4rem; flex-wrap:wrap;}
+  .contact-links{margin-top:3rem; padding-top:2rem; border-top:1px solid rgba(244,240,232,0.15); display:flex; gap:2.2rem; flex-wrap:wrap; font-size:0.85rem;}
+  .contact-links a{text-decoration:none; color:rgba(244,240,232,0.75); border-bottom:1px solid transparent;}
+  .contact-links a:hover{color:var(--pumpkin); border-color:var(--pumpkin);}
+
+  footer{padding:2rem var(--pad); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem; font-size:0.78rem; color:rgba(244,240,232,0.5); background:var(--charcoal);}
+  footer a{text-decoration:none; color:rgba(244,240,232,0.5);}
+  footer a:hover{color:var(--pumpkin);}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-row">
+    <a href="#home" class="logo">Mahmoud Mostafa</a>
+    <nav class="links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cv" href="./assets/mahmoud-mostafa-cv.pdf" download>CV</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" id="burgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#contact">Contact</a>
+    <a href="./assets/mahmoud-mostafa-cv.pdf" download>Download CV</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Media Buyer · Social Media Specialist · Business Strategist</span>
+      <h1>Marketing that starts with the business, <em>not the ad.</em></h1>
+      <p class="hero-sub">I build marketing around the business — not the other way around.</p>
+      <p class="hero-meta">Alexandria, Egypt · Working globally</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary">View selected work</a>
+        <a href="#contact" class="btn btn-secondary">Let's talk</a>
+      </div>
+    </div>
+    <div class="portrait-frame">
+      <img src="./assets/portrait.jpg" alt="Mahmoud Mostafa, Media Buyer and Business Strategist" width="480" height="600">
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Selected work</span>
+      <h2>Real businesses, real evidence.</h2>
+    </div>
+
+    <div class="case-grid reveal">
+
+      <!-- Fresh Treats — flagship case study -->
+      <article class="case-card featured">
+        <h3>Fresh Treats</h3>
+        <div class="case-tags">
+          <span>Luxury Hospitality · Catering · F&amp;B</span>
+          <span>Media Buying · Social Strategy · Lead Generation · Business Strategy</span>
+        </div>
+
+        <div class="result-mini">
+          <div><div class="num">937</div><div class="label">Messaging conversations</div></div>
+          <div><div class="num">38.5K</div><div class="label">Reach</div></div>
+          <div><div class="num">EGP 2.56</div><div class="label">Cost per conversation</div></div>
+          <div><div class="num">EGP 2,398.85</div><div class="label">Total ad spend</div></div>
+        </div>
+        <p class="results-footnote">Meta Ads Manager · 7-day reporting period · objective: messaging conversations — nothing rounded up, nothing extrapolated.</p>
+
+        <div class="case-body">
+          <div>
+            <h4>Challenge</h4>
+            <p>Fresh Treats needed to be read as a premium hospitality and catering experience — not another juice or beverage vendor — and to attract higher-value enquiries around luxury weddings, venues, hotels and premium corporate and private events.</p>
+          </div>
+          <div>
+            <h4>Approach</h4>
+            <p>Build the campaign around business positioning and customer intent rather than product promotion: premium positioning, event-driven demand, audience strategy, creative selection and a messaging-led enquiry objective.</p>
+          </div>
+          <div>
+            <h4>Execution</h4>
+            <p>Meta Ads campaign build, audience strategy, creative selection, messaging campaign setup, ongoing monitoring and performance analysis, plus content direction consistent with a premium hospitality presentation.</p>
+          </div>
+          <div>
+            <h4>Result</h4>
+            <p>937 messaging conversations generated in 7 days, at EGP 2.56 per conversation, from 38.5K reach — full breakdown above.</p>
+          </div>
+        </div>
+
+        <!--
+          Evidence: add the Meta Ads Manager results screenshot at ./assets/fresh-treats-results.png, then:
+          <div class="evidence-img"><img src="./assets/fresh-treats-results.png" alt="Meta Ads Manager results for Fresh Treats"></div>
+        -->
+        <a class="case-link" href="https://fresh-treats-eg.lovable.app" target="_blank" rel="noopener">View live site ↗</a>
+      </article>
+
+      <!-- Luxury Travel -->
+      <article class="case-card compact">
+        <h3>Luxury Travel</h3>
+        <div class="case-tags">
+          <span>Travel · Hospitality</span>
+          <span>Brand Strategy · Marketing · Social Media</span>
+        </div>
+        <div class="case-body">
+          <div>
+            <h4>Challenge</h4>
+            <p>Position a luxury travel concept around premium experiences and destination marketing, rather than price-led travel offers.</p>
+          </div>
+          <div>
+            <h4>Approach</h4>
+            <p>Lead with positioning and customer experience: brand direction, social strategy and marketing strategy built for a high-intent, premium audience.</p>
+          </div>
+          <div>
+            <h4>Execution</h4>
+            <p>Brand positioning, marketing strategy and social media direction for the concept end to end.</p>
+          </div>
+        </div>
+        <!--
+          Evidence: add a brand/creative screenshot at ./assets/luxury-travel-brand.png, then:
+          <div class="evidence-img"><img src="./assets/luxury-travel-brand.png" alt="Luxury Travel brand creative"></div>
+        -->
+        <a class="case-link" href="https://luxurytraveleg.lovable.app" target="_blank" rel="noopener">View live site ↗</a>
+      </article>
+
+      <!-- Value Homes -->
+      <article class="case-card compact">
+        <h3>Value Homes</h3>
+        <div class="case-tags">
+          <span>Real Estate</span>
+          <span>Media Buying · Lead Generation · Digital Strategy</span>
+        </div>
+        <div class="case-body">
+          <div>
+            <h4>Challenge</h4>
+            <p>Generate qualified enquiries for an architecture- and sustainability-focused real estate development.</p>
+          </div>
+          <div>
+            <h4>Approach</h4>
+            <p>Pair lead-generation media buying with a digital experience built to convert, working alongside the web development team.</p>
+          </div>
+          <div>
+            <h4>Execution</h4>
+            <p>Media buying, lead-generation campaigns and digital marketing strategy across the project's paid channels and landing experience.</p>
+          </div>
+        </div>
+        <!--
+          Evidence: add a campaign/landing-page screenshot at ./assets/value-homes-campaign.png, then:
+          <div class="evidence-img"><img src="./assets/value-homes-campaign.png" alt="Value Homes campaign screenshot"></div>
+        -->
+        <a class="case-link" href="https://real-estate-lead-cap-kpwy.bolt.host/" target="_blank" rel="noopener">View live site ↗</a>
+      </article>
+
+      <!-- Luxury Wedding Videographer -->
+      <article class="case-card compact">
+        <h3>Luxury Wedding Videographer</h3>
+        <div class="case-tags">
+          <span>Luxury Weddings · Digital Experience</span>
+          <span>Creative Direction · Landing Page Strategy</span>
+        </div>
+        <span class="concept-tag">Digital experience / concept</span>
+        <div class="case-body">
+          <div>
+            <h4>Challenge</h4>
+            <p>Turn a luxury wedding videography brand into a landing experience that reads as high-intent and bookable, not a generic service page.</p>
+          </div>
+          <div>
+            <h4>Approach</h4>
+            <p>Creative direction built around how a couple actually decides on a videographer for a high-stakes day.</p>
+          </div>
+          <div>
+            <h4>Execution</h4>
+            <p>Creative direction and landing-page strategy designed to convert high-intent visitors into enquiries.</p>
+          </div>
+        </div>
+        <!--
+          Evidence: add a landing-page screenshot at ./assets/wedding-videographer-landing.png, then:
+          <div class="evidence-img"><img src="./assets/wedding-videographer-landing.png" alt="Luxury Wedding Videographer landing page"></div>
+        -->
+        <a class="case-link" href="https://taherelbahr-v48o50.public.builtwithrocket.new" target="_blank" rel="noopener">View live site ↗</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="belief reveal">
+      <span class="eyebrow" style="display:block; margin-bottom:1rem;">What I believe</span>
+      <p>Most campaigns fail before the first ad is built — because the business problem was never clearly understood.</p>
+    </div>
+
+    <div class="road" style="margin-top:clamp(3rem,6vw,4.5rem);">
+      <div class="road-step reveal">
+        <span class="stage">Early career</span>
+        <h3>Travel operations</h3>
+        <p>Booking logistics, client coordination and detail work with no room for guessing — where I learned that a good customer experience is planned, not improvised.</p>
+      </div>
+      <div class="road-step reveal">
+        <span class="stage">Following years</span>
+        <h3>Catering &amp; event operations</h3>
+        <p>Overseeing large-scale catering events: timelines, vendors and client expectations under real pressure. Where I started seeing marketing from the other side — as what brings the client in, not just what makes noise.</p>
+      </div>
+      <div class="road-step current reveal">
+        <span class="stage">Current focus</span>
+        <h3>Media buying, social &amp; business strategy</h3>
+        <p>Running paid media across Meta and Google, shaping social and brand strategy for hospitality and catering businesses, and building conversion-focused digital experiences — with the operational instincts from before still doing most of the work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE ============ -->
+<section id="expertise">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Expertise</span>
+      <h2>Where I add the most value.</h2>
+    </div>
+
+    <div class="expertise-list">
+      <div class="expertise-row">
+        <span class="idx">01</span>
+        <h3>Media Buying</h3>
+        <p>Paid campaigns across Meta Ads and Google Ads built to bring real enquiries, not just impressions.</p>
+      </div>
+      <div class="expertise-row">
+        <span class="idx">02</span>
+        <h3>Social Media Strategy</h3>
+        <p>Content and platform strategy built around a clear brand voice, not a generic content calendar.</p>
+      </div>
+      <div class="expertise-row">
+        <span class="idx">03</span>
+        <h3>Lead Generation &amp; Digital Experiences</h3>
+        <p>Landing pages and digital experiences designed to convert, using AI-assisted tools to move fast without losing quality.</p>
+      </div>
+      <div class="expertise-row">
+        <span class="idx">04</span>
+        <h3>Business Strategy</h3>
+        <p>Connecting marketing activity to what the business actually needs — grounded in years of hands-on operations.</p>
+      </div>
+      <div class="expertise-row">
+        <span class="idx">05</span>
+        <h3>Creative Direction</h3>
+        <p>Shaping how a brand looks and reads across ads and landing experiences so positioning stays consistent end to end.</p>
+      </div>
+    </div>
+
+    <div class="tools">
+      <span class="eyebrow">Tools</span>
+      <div class="tools-list">
+        <span>Meta Ads Manager</span><span>Meta Business Suite</span><span>Google Ads</span>
+        <span>Google Analytics</span><span>TikTok Ads</span><span>CapCut</span>
+        <span>Canva</span><span>Framer</span><span>Claude</span><span>ChatGPT</span>
+      </div>
+    </div>
+
+    <!--
+      CERTIFICATIONS — intentionally hidden until verified.
+      When you hold a real, verifiable certification (e.g. Meta Blueprint,
+      Google Ads, Google Analytics), add a section here in this format:
+
+      <div class="tools" id="certifications">
+        <span class="eyebrow">Certifications</span>
+        <div class="tools-list">
+          <span>Meta Blueprint</span><span>Google Ads Certification</span>
+        </div>
+      </div>
+    -->
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container reveal">
+    <span class="eyebrow">Have something worth building?</span>
+    <h2 style="margin-top:0.8rem;">Tell me about the business, the challenge, and what needs to happen next.</h2>
+    <div class="contact-ctas">
+      <a href="mailto:mahmoudmostafa33t@gmail.com" class="btn btn-primary">Let's talk</a>
+      <a href="mailto:mahmoudmostafa33t@gmail.com" class="btn btn-secondary">Email me</a>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:mahmoudmostafa33t@gmail.com">mahmoudmostafa33t@gmail.com</a>
+      <a href="tel:+201555602694">+20 155 560 2694</a>
+      <a href="https://wa.me/201555602694" target="_blank" rel="noopener">WhatsApp</a>
+      <!--
+        LINKEDIN — hidden until a real profile URL is provided.
+        Once available, uncomment and fill in the href:
+        <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+      -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Mahmoud Mostafa — Media Buyer &amp; Business Strategist</span>
+  <a href="#home">Back to top</a>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const burger = document.getElementById('burgerBtn');
+  const panel = document.getElementById('mobilePanel');
+  burger.addEventListener('click', () => {
+    const open = panel.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    panel.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Single restrained reveal-on-scroll for section heads / key blocks
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
